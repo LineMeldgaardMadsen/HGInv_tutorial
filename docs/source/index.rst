@@ -29,5 +29,6 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   Introduction
+   Theory
+   Example1

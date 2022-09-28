@@ -4,7 +4,7 @@
 
 project = 'HGInv'
 copyright = '2022, Lancaster-Rugthers-Aarhus University HG group'
-author = 'Graziella'
+author = 'Lancaster-Rugthers-Aarhus University HG group'
 
 release = '0.1'
 version = '0.1.0'
