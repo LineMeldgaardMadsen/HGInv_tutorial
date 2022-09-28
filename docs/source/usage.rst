@@ -1,4 +1,4 @@
-Usage
+Introduction
 =====
 
 .. _installation:
@@ -6,14 +6,17 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+In this tutorial, you will be guided through a selection of Python notebooks that can be used for coupled hydrogeophysical inversion. The aim of the hydrogeophysical inversion is to calibrate the hydraulic conductivity of a hydrological model using geophysical data.
 
 .. code-block:: console
 
    (.venv) $ pip install lumache
+   
+.. _Synthetic geophysical data:
 
-Creating recipes
-----------------
+Synthetic geophysical data
+------------
+
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
