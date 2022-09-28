@@ -1,12 +1,16 @@
 Introduction
 =====
 
+In this tutorial, you will be guided through a selection of Python notebooks that can be used for coupled hydrogeophysical inversion. The aim of the hydrogeophysical inversion is to calibrate the hydraulic conductivity of a hydrological model using geophysical data.
+
 .. _installation:
 
 Installation
 ------------
 
-In this tutorial, you will be guided through a selection of Python notebooks that can be used for coupled hydrogeophysical inversion. The aim of the hydrogeophysical inversion is to calibrate the hydraulic conductivity of a hydrological model using geophysical data.
+Before runneing the notebooks, a series of Python Libaries and geophysical/hydrological modelling softwares must be installed.
+The instalations needed depends on the modalites you want to use (e.g. ResiPy coupled with HYDRUS-1D).
+
 
 .. code-block:: console
 
