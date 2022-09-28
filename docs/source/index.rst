@@ -1,15 +1,15 @@
-Tutorial on coupled hydrogeophysical inversion 
+Coupled hydrogeophysical inversion 
 ===================================
 
-In this tutorial, you will be guided through a selection of Python notebooks 
+In this tutorial, you will be guided through a selection of Python Notebooks 
 that can be used for coupled hydrogeophysical inversion. The aim of the hydrogeophysical 
 inversion is to calibrate the hydraulic conductivity of a hydrological model using 
 geophysical data.
 
 The notebooks combines different geophysical and hydrological modelling softwares in 
 an Monte Carlo Markov Chain optimization to calibrate the hydraulic conductivity of 
-the hydrological model. The Notebooks are put togeather in a flexible way allowing the 
-used of different geophysical data type and different hydrological modeles, so the framework 
+a hydrological model. The Notebooks are put togeather in a flexible way allowing the 
+use of different geophysical data type and different hydrological modeles, so the framework 
 can be adapted to any hydrolgeophysical problem.
 
 The following geophysical data types are implemented:
@@ -24,8 +24,7 @@ Examples exsists using the following hydrological modelling softwares
    - MODFLOW-SEAWAT
 
 
-Contents
---------
+Contents:
 
 .. toctree::
 
