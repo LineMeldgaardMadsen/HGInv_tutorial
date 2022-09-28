@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
+project = 'HGInv'
+copyright = '2022, Lancaster-Rugthers-Aarhus University HG group'
 author = 'Graziella'
 
 release = '0.1'
