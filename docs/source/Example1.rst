@@ -2,10 +2,7 @@ Example 1: 1D infiltration
 =====
 
 In this example, the hydaulic conductivity in determined in a two-layed model using a electric resistivity sounding.
-.. code-block:: console
 
-   !{sys.executable} -m pip install phydrus
-   import phydrus as ps
 
 .. _Problem description
 
@@ -17,6 +14,7 @@ A 1D hydrologcal model is defined by an upper layer of a loamy sand
 **Geophysical data**
 
 To calibrate the hydrological model, a geophysical dataset of electric resitivity data have been measured once a day for 50 days after the begening of the infiltration. 
+
 Each day, 20 quadropole sounding were measured using a Schulemberger electrode configureation. 
 The synthetic dataset can be accesed here: 
 
@@ -26,8 +24,9 @@ Solvoing the problem
 ------------
 
 First, we import the needed Python packages:
-
+   
 .. code-block:: console
+
    import os
    import sys
    import numpy as np
@@ -39,6 +38,7 @@ First, we import the needed Python packages:
 We define the working directory
 
 .. code-block:: console
+
    # Define working directory
    wd = (r"p:\...\Ex1") 
 
@@ -59,6 +59,7 @@ We define the working directory
 Here, the hydrological model described above is initialized in term for infiltration and assumed electrical properties. 
 
 .. code-block:: console
+
    # Initialize hydrological parameters
    infil = 0.03          # Infiltration, m/day, constant for 50 days
    con_infil = 200       # Electric water conductivity of infiltration, mS/m 
@@ -80,6 +81,7 @@ Here, the hydrological model described above is initialized in term for infiltra
 **Funcions for running McMC sampling**
 
 .. code-block:: console
+
    def UniformProposer(K):
      K = math.log10(K)
      #Uniform proposer between -1 and 1
@@ -87,13 +89,11 @@ Here, the hydrological model described above is initialized in term for infiltra
      K_new = 10**(K_new)
      return K_new
 
-
   def NormalProposer(K):
       K = math.log10(K)
       K_new = K + np.random.normal()*step
       K_new = 10**(K_new)
       return K_new
-
 
   def chi(d_obs,d_new):
       Cd = np.log10(1+0.10)**2
