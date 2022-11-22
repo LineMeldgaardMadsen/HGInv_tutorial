@@ -2,7 +2,10 @@ Example 1: 1D infiltration
 =====
 
 In this example, the hydaulic conductivity in determined in a two-layed model using a electric resistivity sounding.
+.. code-block:: console
 
+   !{sys.executable} -m pip install phydrus
+   import phydrus as ps
 
 .. _Problem description
 
